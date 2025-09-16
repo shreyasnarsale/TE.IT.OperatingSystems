@@ -101,3 +101,8 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+/*Output:- 
+gcc parent.c -o out
+gcc child.c -o child
+./out
+*/
