@@ -122,8 +122,12 @@ while :; do
 done
 
 
-// mkdir LAB
-  cd LAB/
-  touch Addressbook.sh
- chmod +x Addressbook.sh
-./Addressbook.sh
+#/Output:- 
+#!/bin/bash
+
+# Steps to run:
+# mkdir LAB
+# cd LAB/
+# touch Addressbook.sh
+# chmod +x Addressbook.sh
+# ./Addressbook.sh
