@@ -142,8 +142,8 @@ void sjfPreemptive(Process p[], int n) {
     }
 
     printf("\n--- SJF (Preemptive / SRTF) Scheduling ---\n");
-    printGanttChart(timeline, tIndex);   // ✅ Print Gantt Chart first
-    calculateAndDisplay(p, n);           // ✅ Then print table
+    printGanttChart(timeline, tIndex);   // Print Gantt Chart first
+    calculateAndDisplay(p, n);           // Then print table
 }
 
 void roundRobin(Process p[], int n, int quantum) {
@@ -211,8 +211,8 @@ void roundRobin(Process p[], int n, int quantum) {
     }
 
     printf("\n--- Round Robin Scheduling (Quantum = %d) ---\n", quantum);
-    printGanttChart(timeline, tIndex);   // ✅ Print Gantt Chart first
-    calculateAndDisplay(p, n);           // ✅ Then print table
+    printGanttChart(timeline, tIndex);   // Print Gantt Chart first
+    calculateAndDisplay(p, n);           // Then print table
 }
 
 int main() {
@@ -251,3 +251,10 @@ int main() {
 
     return 0;
 }
+
+
+/*Output:-
+
+     gcc SJF_RR.c -o out
+     ./out
+*/
