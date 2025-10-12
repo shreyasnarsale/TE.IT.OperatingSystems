@@ -114,3 +114,10 @@ int main() {
     return 0;
 }
 
+
+/* Output:
+
+gcc pthreadsemaphores.c -o out
+./out
+
+*/    
