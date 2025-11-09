@@ -1,6 +1,6 @@
 # Operating System Practicals
 
-**Course:** TY BTech IT (2019 Pattern) — Savitribai Phule Pune University
+**Course:** TE BE IT (2019 Pattern) — Savitribai Phule Pune University
 
 ## Overview
 
