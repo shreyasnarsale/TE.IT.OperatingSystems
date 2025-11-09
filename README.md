@@ -35,8 +35,9 @@ Add a new Linux **system call** and demonstrate from user space. Also include **
 ## How to Compile
 
 ```bash
-gcc program.c -o program
-./program
+$ gcc file_name.c -o out 
+$ ./out
+
 # For threads
 gcc program.c -o program -lpthread
 ```
