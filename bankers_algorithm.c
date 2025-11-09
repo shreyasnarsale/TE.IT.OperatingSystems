@@ -16,19 +16,19 @@ int main() {
     int need[n][m];    // Need matrix
 
     // Input allocation matrix
-    printf("Enter Allocation Matrix (rows = processes, columns = resources):\n");
+    printf("\nEnter Allocation Matrix (rows = processes, columns = resources):\n");
     for (i = 0; i < n; i++)
         for (j = 0; j < m; j++)
             scanf("%d", &alloc[i][j]);
 
     // Input maximum demand matrix
-    printf("Enter Maximum Matrix (rows = processes, columns = resources):\n");
+    printf("\nEnter Maximum Matrix (rows = processes, columns = resources):\n");
     for (i = 0; i < n; i++)
         for (j = 0; j < m; j++)
             scanf("%d", &max[i][j]);
 
     // Input available resources
-    printf("Enter Available Resources:\n");
+    printf("\nEnter Available Resources:\n");
     for (i = 0; i < m; i++)
         scanf("%d", &avail[i]);
 
@@ -36,6 +36,21 @@ int main() {
     for (i = 0; i < n; i++)
         for (j = 0; j < m; j++)
             need[i][j] = max[i][j] - alloc[i][j];
+
+    // Display Allocation, Maximum, Need Matrices
+    printf("\nProcess\tAllocation\tMaximum\t\tNeed\n");
+    for (i = 0; i < n; i++) {
+        printf("P%d\t", i);
+        for (j = 0; j < m; j++)
+            printf("%d ", alloc[i][j]);
+        printf("\t\t");
+        for (j = 0; j < m; j++)
+            printf("%d ", max[i][j]);
+        printf("\t\t");
+        for (j = 0; j < m; j++)
+            printf("%d ", need[i][j]);
+        printf("\n");
+    }
 
     // Banker's Algorithm
     bool finish[n];
@@ -47,9 +62,11 @@ int main() {
 
     while (count < n) {
         bool found = false;
+
         for (i = 0; i < n; i++) {
             if (!finish[i]) {
                 bool canAllocate = true;
+
                 for (j = 0; j < m; j++) {
                     if (need[i][j] > avail[j]) {
                         canAllocate = false;
@@ -69,13 +86,13 @@ int main() {
         }
 
         if (!found) {
-            printf("System is not in a safe state.\n");
+            printf("\nSystem is NOT in a safe state.\n");
             return 0;
         }
     }
 
     // Print safe sequence
-    printf("System is in a safe state.\nSafe sequence is: ");
+    printf("\nSystem is in a SAFE state.\nSafe sequence is: ");
     for (i = 0; i < n; i++) {
         printf("P%d", safeSeq[i]);
         if (i != n - 1)
@@ -87,11 +104,8 @@ int main() {
 }
 
 
-
-
-/* Output:-
-
-$ gcc bankers_algorithm.c -o out
-$ ./out
-
-*/
+/* --------------------------
+   Example Compilation & Run:
+   gcc bankers_algorithm.c -o out
+   ./out
+-----------------------------*/
