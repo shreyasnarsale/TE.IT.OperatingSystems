@@ -1,47 +1,77 @@
-# Operating System Practicals
+# 🖥 Operating System Laboratory  
+**Third Year – Information Technology (2019 Course)**  
+Savitribai Phule Pune University (SPPU)  
+Academic Year: 2025–26  
 
-**Course:** TE BE IT (2019 Pattern) — Savitribai Phule Pune University
+---
 
-## Overview
+## 📑 List of Laboratory Assignments
 
-This repo includes all Operating System practicals implemented in C and shell scripts — covering process control, scheduling, synchronization, memory management, IPC, disk scheduling, and system calls.
+### 🔹 Assignment 1
+- Study of Basic Linux Commands:  
+  `echo, ls, read, cat, touch, test, loops, arithmetic comparison, conditional statements, grep, sed`
+- Shell Script: Address Book Program  
+  - Create  
+  - View  
+  - Insert  
+  - Delete  
+  - Modify  
+  - Exit  
 
-## Assignments Summary
+---
 
-**1. Basic Linux Commands & Address Book**
-Study basic commands (`echo`, `ls`, `cat`, `grep`, `sed`, etc.) and implement an Address Book program (create, view, insert, delete, modify records).
+### 🔹 Assignment 2 – Process Control
+- Demonstration of: `fork(), execve(), wait()`
+- Zombie and Orphan processes  
+- Sorting using parent & child process  
+- Passing array using `execve()` and displaying reverse order  
 
-**2. Process Control System Calls**
-Implement `fork`, `execve`, and `wait` — show zombie and orphan processes. Parent/child sorting and reverse array using `execve`.
+---
 
-**3. CPU Scheduling Algorithms**
-Implement **SJF (Preemptive)** and **Round Robin** scheduling.
+### 🔹 Assignment 3 – CPU Scheduling
+- Shortest Job First (Preemptive)  
+- Round Robin (Different arrival time)  
 
-**4. Thread Synchronization**
-Use semaphores and mutex to demonstrate **Producer–Consumer** and **Reader–Writer** problems.
+---
 
-**5. Memory Management**
-Implement **Page Replacement (FCFS, LRU, Optimal)** and **Banker’s Algorithm** for deadlock avoidance.
+### 🔹 Assignment 4 – Thread Synchronization
+- Producer-Consumer (Counting Semaphores & Mutex)  
+- Reader-Writer Problem (Reader Priority)  
 
-**7. IPC – FIFOs**
-Full-duplex communication between two processes using named pipes.
+---
 
-**8. Disk Scheduling**
-Implement **SSTF**, **SCAN**, and **C-LOOK** algorithms.
+### 🔹 Assignment 5 – Memory Management
+- Page Replacement: FCFS, LRU, Optimal  
+- Deadlock Avoidance: Banker's Algorithm  
 
-**Study Assignment**
-Add a new Linux **system call** and demonstrate from user space. Also include **Shared Memory IPC** using System V.
+---
 
-## How to Compile
+### 🔹 Assignment 6
+- (As per syllabus / instructor guidelines)
 
-```bash
-$ gcc file_name.c -o out 
-$ ./out
+---
 
-# For threads
-gcc program.c -o program -lpthread
-```
+### 🔹 Assignment 7 – Inter Process Communication
+- FIFO (Full Duplex Communication)  
+- Shared Memory (System V) – Client & Server  
 
+---
 
+### 🔹 Assignment 8 – Disk Scheduling
+- SSTF  
+- SCAN  
+- C-LOOK  
 
+---
 
+## 🛠 Tools & Technologies
+- Linux / Ubuntu  
+- GCC Compiler  
+- C Programming  
+- POSIX Threads  
+- Linux Kernel Source  
+
+---
+
+**Name:** Shreyas Narsale  
+**Class:** TE IT  
